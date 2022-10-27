@@ -5,20 +5,25 @@
 		{"id":1,
 		"name":"React",
 		"logo":"https://live.staticflickr.com/65535/52413593240_e00326e727_o.png",
+		"price": "$30",		
+		"details":"React JS is a JavaScript Library. This is a Fundamentals course for Beginners who are just getting started with React." ,
 		"total":8},
 
 		{"id":2,
 		"name":"JavaScript","logo":"https://live.staticflickr.com/65535/52412638962_12e932256a_o.png",
+		"price": "$40",
 		"total":9},
 
 		{"id":3,
 		"name":"CSS",
 		"logo":"https://live.staticflickr.com/65535/52413665713_5977a693cb_o.png",
+		"price": "$50",		
 		"total":8},
 
 		{"id":4,
 		"name":"Git",
 		"logo":"https://live.staticflickr.com/65535/52412639027_5692c15b3f_o.png",
+		"price": "$60",
 		"total":11}
 
 		]

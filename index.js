@@ -7,7 +7,8 @@ const cors = require('cors');
 app.use(cors());
 
 const mobiles = require('./data/mobiles.json');
-const courses = require('./data/course topic.json');
+const courses = require('./data/courses.json');
+const quizzes = require('./data/quizzes.json');
 
 app.get('/', (req, res) => {
     res.send('Hello world');
@@ -19,6 +20,21 @@ app.get('/mobiles', (req, res) => {
 
 app.get('/courses', (req, res) => {
     res.send(courses);
+})
+
+app.get('/course/:id', (req, res) => {    
+    console.log(req.params);  // output: {id: '4'}
+    const id = parseInt(req.params.id);
+    const course = courses.data.find(course => course.id === id);
+    res.send(course);
+
+})
+
+app.get('/course/quiz/:name', (req, res) =>{   
+    // console.log(req.params) ;
+    const my_name = req.params.name.toLowerCase();        
+    const quiz = quizzes.find(quiz => quiz.data.name.toLowerCase() === my_name);
+    res.send(quiz);
 })
 
 app.listen(port, () => {
