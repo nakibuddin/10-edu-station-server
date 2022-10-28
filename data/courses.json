@@ -1,31 +1,42 @@
 {
 	"status":true,
 	
-	"data":[	   	
+	"data":[	
 		{"id":1,
+		"name":"C Programming",
+		"logo":"https://www.britefish.net/wp-content/uploads/2019/07/logo-c-1.png",
+		"price": "$20",
+		"total":11},
+
+		{"id":2,
+		"name":"Java",
+		"logo":"https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png",
+		"price": "$20",
+		"total":11},
+
+		{"id":3,
 		"name":"React",
 		"logo":"https://live.staticflickr.com/65535/52413593240_e00326e727_o.png",
 		"price": "$30",		
 		"details":"React JS is a JavaScript Library. This is a Fundamentals course for Beginners who are just getting started with React." ,
 		"total":8},
 
-		{"id":2,
-		"name":"JavaScript","logo":"https://live.staticflickr.com/65535/52412638962_12e932256a_o.png",
+		{"id":4,
+		"name":"JavaScript","logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYfbaJ3eCkft5cB1BjSSN8pwLqODTGLTqOXQyIUhvWQSVSPgyG6bI5iH4S3mCVPdIV7w&usqp=CAU",
 		"price": "$40",
 		"total":9},
 
-		{"id":3,
+		{"id":5,
 		"name":"CSS",
 		"logo":"https://live.staticflickr.com/65535/52413665713_5977a693cb_o.png",
 		"price": "$50",		
 		"total":8},
 
-		{"id":4,
+		{"id":6,
 		"name":"Git",
 		"logo":"https://live.staticflickr.com/65535/52412639027_5692c15b3f_o.png",
 		"price": "$60",
-		"total":11}
-
+		"total":11}				
 		]
 		
 }
