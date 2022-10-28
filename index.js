@@ -19,11 +19,20 @@ app.get('/mobiles', (req, res) => {
 })
 
 app.get('/courses', (req, res) => {
+    console.log('from all course', req.params);
     res.send(courses);
 })
 
 app.get('/course/:id', (req, res) => {    
-    console.log(req.params);  // output: {id: '4'}
+    console.log('from course', req.params);  // output: {id: '4'}
+    const id = parseInt(req.params.id);
+    const course = courses.data.find(course => course.id === id);
+    res.send(course);
+    
+})
+
+app.get('/course/checkout/:id', (req, res) => {    
+    console.log('from checkout', req.params);  // output: {id: '4'}
     const id = parseInt(req.params.id);
     const course = courses.data.find(course => course.id === id);
     res.send(course);
@@ -31,7 +40,7 @@ app.get('/course/:id', (req, res) => {
 })
 
 app.get('/course/quiz/:name', (req, res) =>{   
-    // console.log(req.params) ;
+    // console.log('from quiz', req.params);
     const my_name = req.params.name.toLowerCase();        
     const quiz = quizzes.find(quiz => quiz.data.name.toLowerCase() === my_name);
     res.send(quiz);
